@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1Hotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Bisque">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10">
+        <Label 
+            Text="SOBRE"
+            FontFamily="Kalam" 
+            FontSize="40"
+            TextColor="{StaticResource Primary}" />
+
+        <Frame Padding="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Aplicativo de Reservas de Hospedagem"
+                       FontFamily="Kalam-Light"
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       TextColor="DarkBlue"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Desenvolvido por: " FontAttributes= "Bold" TextColor="#1B3D81" />
+                <Label Text="Meire L Contino" />
+
+                <Label Text="GitHub:  " FontAttributes= "Bold" TextColor="#1B3D81" />
+                <Label Text="github.com/MeireContino/MauiApp1Hotel" />
+
+                <Label Text="Ano: " FontAttributes= "Bold" TextColor="#1B3D81" />
+                <Label Text="2025" />
+
+                <Label Text="Projeto: " FontAttributes= "Bold" TextColor="#1B3D81" />
+                <Label Text="Aplicativo de Hotel desenvolvido em .NET MAUI" />
+
+                <Label Text="Curso: " FontAttributes= "Bold" TextColor="#1B3D81" />
+                <Label Text="Análise e Desenvolvimento de Sistemas - EADTEC" />
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
