@@ -4,15 +4,18 @@
              x:Class="MauiApp1Hotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="Bisque">
+             BackgroundColor="#8a9bae">
     
-    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+    <!--Mudança de CenterAndExpend para center devido a desuso -->
+    <VerticalStackLayout VerticalOptions="Center"
                          Padding="10">
         
+        <!--Mudança nos estilos do texto -->
         <Label 
             Text="Cálculo da Diária" 
-            FontFamily="Kalam"
-            FontSize="50"
+            FontFamily="PlayfairItalic"
+            FontAttributes="Bold"
+            FontSize="45"
             TextColor="{StaticResource Primary}"/>
 
         <Frame Padding="10">
@@ -74,14 +77,18 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" />
-                
-            </VerticalStackLayout>
-        </Frame>
 
         <Button Text="Avançar" Clicked="Button_Clicked" />
 
-        <Button Text="Sobre" Clicked="OnSobreClicked" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!--Inclusão do Horizontal Options para centralizar, cor e negrito para o texto -->
+        <Button Text="Sobre" 
+                HorizontalOptions="Center"
+                TextColor="#4682b4"
+                FontAttributes="Bold"
+                Clicked="OnSobreClicked" />
 
     </VerticalStackLayout>
 </ContentPage>

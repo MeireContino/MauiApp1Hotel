@@ -22,7 +22,7 @@ public partial class ContratacaoHospedagem : ContentPage
 	private async void Button_Clicked(object sender, EventArgs e)
 	{
 		try
-		{
+		{ 
 			await Navigation.PushAsync(new HospedagemContratada());
 		}
 		catch (Exception ex)

@@ -6,31 +6,43 @@ namespace MauiApp1Hotel
     {
         public List<Quarto> lista_quartos = new List<Quarto>
         {
-            new Quarto() 
-            {
-                Descricao = "Suíte Super Luxo",
-                ValorDiariaAdulto = 110.0,
-                ValorDiariaCrianca = 55.0
-            },
+            
+
              new Quarto()
             {
-                Descricao = "Suíte Luxo",
-                ValorDiariaAdulto = 80.0,
-                ValorDiariaCrianca = 40.0
+                 //Inclusão do quarto Suíte Presidencial
+                Descricao = "Suíte Presidencial",
+                ValorDiariaAdulto = 950.0,
+                ValorDiariaCrianca = 425.0
+            },
+              new Quarto()
+            {
+                //Inclusão do quarto Suíte Master
+                Descricao = "Suíte Master",
+                ValorDiariaAdulto = 700.0,
+                ValorDiariaCrianca = 350.0
+            },
+              new Quarto()
+            {
+                Descricao = "Suíte Super Luxo",
+                ValorDiariaAdulto = 600.0,
+                ValorDiariaCrianca = 300.0
+            },
+              new Quarto()
+            {
+                //Inclusão do quarto Suíte Premium
+                Descricao = "Suíte Premium",
+                ValorDiariaAdulto = 500.0,
+                ValorDiariaCrianca = 250.0
             },
               new Quarto()
             {
                 Descricao = "Suíte Single",
-                ValorDiariaAdulto = 50.0,
-                ValorDiariaCrianca = 25.0
-            },
-               new Quarto()
-            {
-                Descricao = "Suíte Crise",
-                ValorDiariaAdulto = 25.0,
-                ValorDiariaCrianca = 12.5
+                ValorDiariaAdulto = 350.0,
+                ValorDiariaCrianca =175.0
+                //Exclusão do último quarto, pois está fora do padrão do negócio
             }
-        };
+        }; 
         
         public App()
         {
