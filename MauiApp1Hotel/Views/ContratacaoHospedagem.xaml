@@ -51,17 +51,34 @@
                              Increment="1"/>
                 </Grid>
 
-                <Label Text="Escolha sua Suíte" />
+                <Label Text="Escolha Sua Acomodação" 
+                       FontFamily="KalamLight"
+                       FontAttributes="Bold"
+                       FontSize="17"
+                       TextColor="DarkBlue"
+                       HorizontalOptions="Center"/>
+                <!--Alteração do texto: "Escolha sua suíte" para "Escolha sua Acomodação" para deixar mais fluído -->
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação" 
-                        ItemDisplayBinding="{Binding Descricao}"/>
+ 
+                        ItemDisplayBinding="{Binding Descricao}"
+                        FontFamily="KalamLight"
+                        FontAttributes="Bold" />
 
+                <!--Inclusão da fonte kalam-light e negrito - bold -->
+                
+                
+                <!-- Melhorias no estilo e formatação do texto  -->
                 <Frame Padding="10"
                        Margin="10">
                     <VerticalStackLayout>
-                        <Label Text="Período da Estadia" />
-                        
+                        <Label Text="Período da Estadia: " 
+                                FontFamily="KalamLight"
+                                 FontAttributes="Bold"
+                                 FontSize="17"
+                                 TextColor="DarkBlue"
+                                 HorizontalOptions="Center"/>
+
                         <HorizontalStackLayout>
                             <Label Text="Check-in" />
                             <DatePicker x:Name="dtpck_checkin"
